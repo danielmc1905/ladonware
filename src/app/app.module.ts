@@ -11,20 +11,30 @@ import { HttpClientModule } from '@angular/common/http';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { DeleteDialogComponent } from './components/delete-dialog/delete-dialog.component';
 
+//Material Angular
+import { MatTableModule } from '@angular/material/table';
+import { MatListModule } from '@angular/material/list';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+
 @NgModule({
   declarations: [
     AppComponent,
     ProductItemComponent,
     HomeComponent,
-    ProductFilterPipe,
     EditProductDialogComponent,
-    DeleteDialogComponent
+    DeleteDialogComponent,
+    ProductFilterPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NoopAnimationsModule
+    NoopAnimationsModule,
+    MatTableModule,
+    MatListModule,
+    MatButtonModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
